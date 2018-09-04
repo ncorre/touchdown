@@ -1,21 +1,31 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <DecaFilter></DecaFilter>
+    <DecaMap></DecaMap>
+    <div>
+        <DecaThumb></DecaThumb>
+    </div>
+    
   </div>
 </template>
 
 <script>
+import DecaFilter from './components/DecaFilter'
+import DecaMap from './components/DecaMap'
+import DecaThumb from './components/DecaThumb'
+
 export default {
-  name: 'App'
+  name: 'app',
+  components: {
+      DecaFilter,
+      DecaMap,
+      DecaThumb
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
