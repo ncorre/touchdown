@@ -1,5 +1,5 @@
 <template>
-    <b-form-select :options="options" class="col-md-4 col-sm-12">
+    <b-form-select v-model="selected" :options="options" class="col-md-4 col-sm-12">
       <option v-for="sport in sports.data" :key="sport.id" :value="sport.id" >{{sport.name}}</option>
     </b-form-select>
 </template>
@@ -10,7 +10,8 @@ import axios from 'axios'
   export default {
     data: function () {
     return {
-      options: '',
+      selected: '134',
+      options: {},
       sports: null
     }
     },
