@@ -3,7 +3,9 @@
     <Header/>
     <div class="container">
       <div class="row">
-        <DecaFilter></DecaFilter>
+        <div class="col-md-4">
+          <DecaFilter></DecaFilter>
+        </div>
       </div>
       
       <div class="row">
